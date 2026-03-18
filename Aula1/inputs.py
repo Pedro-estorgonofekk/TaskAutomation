@@ -1,4 +1,4 @@
-#Aula de inputs 3° ano ja, é mole?
+#Aula de inputs 3° ano ja, é mole
 
 salario = float(input("Salario: "))
 
