@@ -1,4 +1,4 @@
-#Comando break: Interrompe o laço de repetição
+#Comando break, Interrompe o laço de repetição
 
 nomes = ["Lucas", "Jesuely", "Caua", "Filipe"]
 
