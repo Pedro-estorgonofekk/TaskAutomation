@@ -19,3 +19,11 @@
     - Continuações `continue`
 
 - Aula sobre listas e dicionarios
+
+## Aula 4:
+- Aula sobre laços `while`, `try`, `except`
+
+## Aula 5:
+- Aula sobre funções
+    - Sintaxe `def`
+    - Importação `import`
