@@ -6,3 +6,6 @@ def Ler():
 
 def PulaLinha():
     print("\n")
+
+def Soma(a, b):
+    return a + b
