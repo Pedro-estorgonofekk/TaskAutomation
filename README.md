@@ -27,3 +27,10 @@
 - Aula sobre funções
     - Sintaxe `def`
     - Importação `import`
+
+- Aula com `pyautogui`
+
+
+## Bibliotecas:
+- Ativar o ambiente virtual(opcional), e instalar dependencias:
+    - `pip install -r requirements.txt`
