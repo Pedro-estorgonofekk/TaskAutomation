@@ -32,7 +32,11 @@
 
 ## Aula 6:
 - Automações com `pyautogui`
-    - Escreve 67 na calculadora do windows
+    - Escreve 67 na calculadora do windows (Precisa estar aberta e na local especifico)
+
+- Aula com `locateOnScreen`
+    - Escreve 67 na calculadora do windows (Precisa estar aberta)
+    - Tratamento de cor com `grayscale`, erro relacionado à efeito de 
 
 ## Bibliotecas:
 - Ativar o ambiente virtual(opcional), e instalar dependencias:
