@@ -34,3 +34,4 @@
 ## Bibliotecas:
 - Ativar o ambiente virtual(opcional), e instalar dependencias:
     - `pip install -r requirements.txt`
+    
