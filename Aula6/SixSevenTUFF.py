@@ -1,7 +1,9 @@
-import pyautogui as pag
-import time
+##Precisa da Calculadora aberta do windows 1920x1080
 
-time.sleep(1)
+import pyautogui as pag
+from time import sleep
+
+sleep(1)
 
 for i in range (3):
     pag.click(170,485, duration=0.5, interval=0.1)
