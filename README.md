@@ -30,6 +30,9 @@
 
 - Aula com `pyautogui`
 
+## Aula 6:
+- Automações com `pyautogui`
+    - Escreve 67 na calculadora do windows
 
 ## Bibliotecas:
 - Ativar o ambiente virtual(opcional), e instalar dependencias:
