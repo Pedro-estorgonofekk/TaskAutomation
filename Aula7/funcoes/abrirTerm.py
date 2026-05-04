@@ -3,10 +3,11 @@ from time import sleep
 
 def abrirTerm():
     pag.hotkey("win", "d")
-    pag.press("g")
+    pag.press("win")
+    pag.write("chrome")
     pag.press("enter")
 
-    sleep(0.15)
+    sleep(0.5)
     pag.hotkey("ctrl", "shift", "n")
 
     sleep(0.15)
