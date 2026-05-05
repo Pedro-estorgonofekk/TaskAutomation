@@ -42,7 +42,8 @@
 - Ativar o ambiente virtual(opcional), e instalar dependencias:
     - `pip install -r requirements.txt`
 - Ambiente virtual:
-    - `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process`
-    - `python -m venv .venv`
-    - `.venv\Scripts\Activate.ps1`
-    
+```bash
+  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+  python -m venv .venv
+  .venv\Scripts\Activate.ps1
+```
