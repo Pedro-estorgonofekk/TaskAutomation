@@ -49,3 +49,4 @@
 ```
 - `pyautogui`
 - `opencv`
+- `pandas`
