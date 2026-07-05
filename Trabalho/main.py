@@ -1,28 +1,29 @@
 #Gerador de cartaz de procurado
-#Libs: pandas, pyautogui, pillow e uma importação de funções do arquivo funcoes.py
+#Libs: Path, pandas, time, pyautogui
 
+from pathlib import Path
 import pandas as pd
 import pyautogui as pag
 from time import sleep
-from PIL import Image, ImageDraw, ImageFont
-from funcs.funcoes import AbrirNavegador, GerarCartaz, SalvarCartaz
+from funcs.funcoes import AbrirNavegador, GerarCartaz, SalvarCartaz, UploadCartaz
 
 #Importando planilha de procurados
 procurados = pd.read_excel('procurados.xlsx')
+dirExecucao = Path(__file__).resolve().parent
 
 AbrirNavegador()
 sleep(0.5)
 
-pag.write("https://docs.google.com")
-pag.press("enter")
-sleep(2)
-
-SalvarCartaz()
 
 #Loop pra iterar em cada linha da planilha e atribuir os dados
+
+pag.alert("Gerando cartazes, pressione OK para continuar")
 for i, row in procurados.iterrows():
     nome = row['Nome']
     crime = row['Crime']
     recompensa = row['Recompensa']
 
-    GerarCartaz(nome, crime, recompensa)
+    GerarCartaz(nome, crime, recompensa, dirExecucao)
+    UploadCartaz(dirExecucao, nome)
+
+SalvarCartaz()
