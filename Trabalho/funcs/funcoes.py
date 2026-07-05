@@ -3,30 +3,52 @@ from time import sleep
 from PIL import Image, ImageDraw, ImageFont
 
 def AbrirNavegador():
+
     navegador = pag.prompt("Digite o navegador que deseja abrir").lower()
+    perfil = pag.prompt("Você possui perfis no navegador? (s/n)").lower()
 
-    array_navegadores = ['chrome', 'firefox', 'edge', 'opera', 'safari', 'brave', 'vivaldi', 'tor', 'chromium', 'opera gx']
-
-    if navegador not in array_navegadores:
+    arrayNavegadores = ['chrome', 'firefox', 'edge', 'opera', 'safari', 'brave', 'vivaldi', 'tor', 'chromium', 'opera gx']
+    
+    if navegador not in arrayNavegadores:
         pag.alert("Navegador não encontrado")
         return
     
-    pag.hotkey("win", "d")
-    sleep(0.1)
-    pag.press("win")
-    sleep(1)
+    if perfil in ['s', 'sim']:
+        pag.hotkey("win", "d")
+        sleep(0.1)
+        pag.press("win")
+        sleep(0.1)
 
-    pag.write(navegador)
-    sleep(1)
-    pag.press("enter")
-    sleep(2)
+        pag.write(navegador, interval=0.1)
+        pag.press("enter")
+        sleep(3)
+        pag.press("tab")
+        sleep(0.1)
+        pag.press("enter")
+        sleep(3)
+
+    elif perfil in ['n', 'não', 'nao']:
+
+        pag.hotkey("win", "d")
+        sleep(0.1)
+        pag.press("win")
+        sleep(1)
+
+        pag.write(navegador, interval=0.1)
+        sleep(1)
+        pag.press("enter")
+        sleep(3)
+    else:
+        pag.alert("Opção inválida")
+        return
+    
     pag.hotkey("alt", "space")
     pag.press("x")
     sleep(1)
 
     pag.write("https://docs.google.com")
     pag.press("enter")
-    sleep(2)
+    sleep(3)
 
     try:
         coords = pag.locateCenterOnScreen("assets/pag/criar.png", confidence=0.8)
@@ -35,7 +57,7 @@ def AbrirNavegador():
         return
 
     pag.click(coords)
-    sleep(2)
+    sleep(3)
 
 def UploadCartaz(dirExecucao, nome):
     try:

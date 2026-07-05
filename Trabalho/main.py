@@ -11,9 +11,9 @@ from funcs.funcoes import AbrirNavegador, GerarCartaz, SalvarCartaz, UploadCarta
 procurados = pd.read_excel('procurados.xlsx')
 dirExecucao = Path(__file__).resolve().parent
 
+
 AbrirNavegador()
 sleep(0.5)
-
 
 #Loop pra iterar em cada linha da planilha e atribuir os dados
 
@@ -28,3 +28,4 @@ for i, row in procurados.iterrows():
     UploadCartaz(dirExecucao, nome)
 
 SalvarCartaz()
+pag.alert("Automação concluída! Pressione OK para sair")
