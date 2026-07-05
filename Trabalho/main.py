@@ -24,6 +24,7 @@ for i, row in procurados.iterrows():
     recompensa = row['Recompensa']
 
     GerarCartaz(nome, crime, recompensa, dirExecucao)
+    sleep(0.5)
     UploadCartaz(dirExecucao, nome)
 
 SalvarCartaz()
