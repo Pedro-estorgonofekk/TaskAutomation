@@ -1,0 +1,40 @@
+Bruno Souza Alves:
+	147.258.369-00
+	Teclado Mecnico rgb
+	R$249
+Camila Rocha Lima:
+	258.369.147-11
+	Mouse ptico Wireless
+	R$129
+Daniel Mendes Cruz:
+	369.147.258-22
+	Monitor 24 Polegadas Full HD
+	R$899
+Fernanda Dias Gomes:
+	456.123.789-33
+	Headset Gamer com Microfone
+	R$199
+Gustavo Nogueira:
+	789.456.123-44
+	WebCam Full hD 1080p
+	R$349
+Juliana Ribeiro Costa:
+	512.347.891-55
+	Cadeira Gamer Ergonmica
+	R$1199
+Lucas Martins Vieira:
+	623.458.902-66
+	SSD M.2 NVMe 1TB
+	R$420
+Mariana Souza Frota:
+	734.569.013-77
+	Memria rAM dDR4 16GB
+	R$289
+Rodrigo Alves Paz:
+	845.670.124-88
+	Roteador Wi-Fi 6 Gigabit
+	R$459
+Beatriz Pinheiro Lima:
+	956.781.235-99
+	Carregador Porttil 20000mAh
+	R$179
